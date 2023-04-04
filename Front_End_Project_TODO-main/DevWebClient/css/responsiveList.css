@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px)
+
+/*cont cros img :: first child display none*/
+    {
+    .mainContainer {
+        display: grid;
+        column-gap: 0px;
+        grid-template-columns: repeat(1, auto);
+        padding-top: 0px;
+    }
+
+    .mainContainer>div:first-child {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 0px;
+    }
+
+    .mainContainer>div:last-child {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .editing {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #F5F5F5;
+        min-width: 0px;
+    }
+
+    .mainContainer>div:last-child>div>div:first-child {
+        display: flex;
+    }
+
+    .mainContainer>div:last-child {
+        margin-right: 16px;
+    }
+
+    form {
+        min-width: 0px;
+    }
+}

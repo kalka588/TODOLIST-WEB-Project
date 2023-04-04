@@ -1,0 +1,368 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 78px;
+}
+
+.mainContainer>div:last-child>div>div:first-child {
+    padding-bottom: 22px;
+    padding-top: 27px;
+    padding-left: 13px;
+    padding-right: 8px;
+    font-size: 2rem;
+    display: none;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.parentediting {
+    display: none;
+    flex-direction: column;
+}
+
+.editing {
+    background-color: #FFFFFF;
+    position: absolute;
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 100%;
+    max-height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    display: none;
+}
+
+.boxOpacity {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    min-height: 100%;
+    max-height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.supr_list_button {
+    background-color: rgba(214, 48, 49, 1);
+    color: rgba(255, 255, 255, 1);
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    grid-template-columns: auto auto;
+    border-radius: 3px;
+}
+
+.annul_button {
+    background-color: #C4C4C4;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    grid-template-columns: auto auto;
+    border-radius: 3px;
+
+    flex-grow: 1;
+}
+
+.edit_button .annul_button {
+    padding-left: 34px;
+    padding-right: 36px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.save_button {
+    border-radius: 4px;
+    background-color: #FF7675;
+    border-style: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    grid-template-columns: auto auto;
+    flex-grow: 1;
+}
+
+h2 {
+    margin-left: 16px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.item {
+    border: 0px solid #BDBDBD;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+    column-gap: 16px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+.item img {
+    margin-right: 21px;
+}
+
+.item>div {
+    flex-grow: 1;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+.task_l2 {
+    color: rgba(102, 102, 102, 1);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    column-gap: 8px;
+    list-style: none;
+    font-size: 0.75rem;
+}
+
+.task_l2 li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.task_l2 li img {
+    margin-right: 0px;
+}
+
+.item:last-child {
+    border-bottom-width: 1px;
+}
+
+/* .mainContainer>div:last-child {
+    margin-right: 16px;
+} */
+
+.item_holder+.item:last-child {
+    border-top-style: none;
+}
+
+.item:last-child img {
+    position: relative;
+    right: 0px;
+}
+
+.item:last-child input {
+    border-style: none;
+}
+
+.item_holder+.item {
+    column-gap: 16px;
+}
+
+/* Style de l'editing */
+
+.gaped {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+}
+
+.edit_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 300px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+}
+
+.edit_button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.parentediting {
+    height: 100%
+}
+
+.Etape-element {
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    justify-content: space-around;
+}
+
+.Etape-element input {
+    border-style: none;
+}
+
+.Etapes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+
+
+.Etapes div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 9.33px;
+}
+
+.Etapes div:last-child {
+    column-gap: 9px;
+}
+
+.Etape-element input:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 16px;
+    padding-bottom: 13px;
+}
+
+.border {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    border: 1px solid #ADADAD;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 11.33px;
+}
+
+.minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13.33px;
+    height: 13.33px;
+}
+
+.plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+}
+
+.calendar {
+    width: 13.33px;
+    height: 14.67px;
+}
+
+.note {
+    flex-grow: 1;
+}
+
+.note textarea {
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-right: 9px;
+    padding-bottom: 16px;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+}
+
+.parent {
+    flex-direction: row;
+    display: flex;
+}
+
+.Note_Space {
+    flex-direction: column;
+    display: flex;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.edit_container .note {
+    height: 128px;
+}
+
+.edit_container div {
+    width: 100%;
+}
+
+.list_element input {
+    bottom: 20.83%;
+    font-size: 0.75rem;
+    background: #FF7675;
+    border-radius: 3px;
+    bottom: 0px;
+    height: 24px;
+    width: 24px;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.list_element p {
+    flex-grow: 1;
+}
+
+[type="checkbox"]:checked+.task p:first-child {
+    text-decoration: line-through;
+}
+
+.container3 li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+[type="date"] {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 12.25px;
+    padding-right: 16.67px;
+    border: 1px solid #ADADAD;
+    border-radius: 4px;
+}
+
+.editing .close_icon {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+}
+
+.Etape-element .padding {
+    padding-top: 16px;
+    padding-bottom: 13px;
+    width: 100%;
+}

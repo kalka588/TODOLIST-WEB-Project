@@ -1,0 +1,186 @@
+/* MENU MOBILE  */
+.menu {
+    /* Fixe la nav */
+    position: fixed;
+    /* sur le haut de la page */
+    top: 0px;
+    background-color: #FF7675;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px;
+    padding-right: 0px;
+}
+
+.menu * {
+    color: #FFFFFF;
+}
+
+.menu p {
+    flex-grow: 1;
+}
+
+.menu img:last-child {
+    margin-right: 19px;
+}
+
+/* MENU DESKOP VERSION MOBILE */
+.menuDeskop {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 350px;
+    min-width: 350px;
+    max-height: 100%;
+    min-height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.boxOpacityRight {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    min-height: 100%;
+    max-height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+}
+
+.boxOpacityRight {
+    right: 0px;
+    left: auto;
+}
+
+.MaxContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 41px;
+    padding: 19px;
+    width: 100%;
+}
+
+.close_icon {
+    width: 14px;
+    height: 14px;
+}
+
+.menuDeskop img:first-child {
+    width: 14px;
+    height: 14px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    column-gap: 13px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.MaxContainer .container1 img {
+    Width: 27px;
+    Height: 17px;
+}
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.container2 .list_title {
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 18px;
+}
+
+.container2 .my_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    list-style: none;
+}
+
+.container2 .my_list .list_element {
+    display: flex;
+    flex-direction: row;
+}
+
+.container2 .my_list .list_element p {
+    flex-grow: 1;
+}
+
+.my_list .list_element {
+    column-gap: 18px;
+
+}
+
+.container3 li,
+.container3 li a {
+    display: flex;
+    flex-direction: row;
+}
+
+.container3 :first-child img {
+    width: 18.67px;
+    height: 19.2px;
+}
+
+.container3 :nth-child(2) img {
+    width: 18px;
+    height: 18px;
+}
+
+.container3 li:first-child a {
+    column-gap: 13.67px;
+}
+
+.container3 li:last-child {
+    column-gap: 14px;
+}
+
+hr {
+    flex-grow: 1;
+    height: 1px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    position: absolute;
+    bottom: 19px;
+    list-style: none;
+
+}
+
+.container3 p:hover {
+    cursor: pointer;
+}
+
+
+/* Continuer le style du menu ici */
+
+@media screen and (min-width: 1024px)
+
+/*cont cros img :: first child display none*/
+    {
+    .close_icon {
+        display: none;
+    }
+
+    .menuDeskop {
+        background-color: #F5F5F5;
+        width: 300px;
+        min-width: 0px;
+    }
+}

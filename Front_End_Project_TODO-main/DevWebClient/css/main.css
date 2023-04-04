@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    /*Vérifier la font-familly Roboto*/
+    font-weight: 400;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    max-width: 350px;
+    min-width: 350px;
+}

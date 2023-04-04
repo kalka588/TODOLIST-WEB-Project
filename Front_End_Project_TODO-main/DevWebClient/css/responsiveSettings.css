@@ -1,0 +1,30 @@
+@media screen and (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .menuDeskop {
+        position: relative;
+        display: flex;
+    }
+
+    h1 {
+        display: inline;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .mainContainer {
+        margin-left: 31px;
+        margin-top: 0px;
+        padding-top: 32px;
+        align-items: flex-start;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 300px auto;
+        column-gap: 0px;
+        min-height: 100%;
+    }
+}

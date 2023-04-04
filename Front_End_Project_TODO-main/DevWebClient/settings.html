@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/settings.css" rel="stylesheet">
+    <link href="css/responsiveSettings.css" rel="stylesheet">
+    <script src="js/genereHTML.js"></script>
+    <script type="module" src="js/resize-settings.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="module" src="js/responsiveDisplayClass.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="assets/menu.svg" alt="icon menu" onclick="displayMenu()">
+            <p>Paramètres</p>
+        </div>
+        <nav class="display menuDeskop ">
+            <div class="MaxContainer">
+                <img class="close_icon" src="assets/close.svg" alt="icon close" onclick="displayMenu()">
+                <a href="index.html" class="container1"> <img src="assets/home.svg" alt="icon home">jesmo@drazik.com</a>
+                <div class="container2">
+                    <div class="list_title">
+                        <h4>Mes Listes </h4>
+                        <hr>
+                    </div>
+                    <ul class="my_list">
+                        <li class="list_element">
+                            <p>To do today </p><input type="button" value="2">
+                        </li>
+                        <li class="list_element">
+                            <p>Projet tutoré</p> <input type="button" value="5">
+                        </li>
+                        <li class="list_element">
+                            <p>Stage</p>
+                        </li>
+                        <li class="list_element"><img src="assets/red-cross.svg" alt="icon supprimer-element"> Nouvelle
+                            liste</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="container3">
+                        <li><a href="settings.html"><img src="assets/settings.svg" alt="icon parametre">
+                                <p>Paramètres</p>
+                            </a>
+                        </li>
+                        <li onclick="deconnexion()"><img src="assets/logout.svg" alt="icon déconnexion">
+                            <p>Deconnection</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="boxOpacityRight display"></div>
+    </header>
+
+    <main class="mainContainer">
+        <h1>Paramètres</h1>
+        <section class="flexContainer">
+            <div class="flexContainer">
+                <h2>Adresse e-mail</h2>
+                <p class="emailActuel">
+                    <strong>Adresse e-mail actuelle :</strong> jesmo@drazik.com
+                </p>
+            </div>
+
+            <form class="flexContainer">
+                <div class="flexContainer">
+                    <label for="email">Nouvelle adresse e-mail</label>
+                    <input type="email" placeholder="mail@provider.com" id="email">
+                </div>
+                <div class="flexContainer">
+                    <label for="confirmEmail">Confirmer l'adresse e-mail</label>
+                    <input type="email" placeholder="mail@provider.com" id="confirmEmail">
+                </div>
+                <input type="button" value="Modifier l'adresse e-mail">
+            </form>
+        </section>
+
+        <section class="flexContainer">
+            <h2>Mot de passe</h2>
+
+            <form class="flexContainer">
+                <div class="flexContainer">
+                    <label for="password">Mot de passe actuel</label>
+                    <input type="password" placeholder="password" id="password">
+                </div>
+                <div class="flexContainer">
+                    <label for="newPassword">Nouveau mot de passe</label>
+                    <input type="password" placeholder="password" id="newPassword">
+                </div>
+                <div class="flexContainer">
+                    <label for="confirm">Confirmer le nouveau mot de passe</label>
+                    <input type="password" placeholder="password" id="confirm">
+                </div>
+                <input type="button" value="Modifier le mot de passe">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

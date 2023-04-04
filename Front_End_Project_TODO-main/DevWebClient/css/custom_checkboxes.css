@@ -1,0 +1,23 @@
+[type="checkbox"]{
+
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+width: 20px;
+height: 20px;
+background-image: url("../assets/grey font.svg"),url("../greycircle.svg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+[type="checkbox"]:checked{
+
+background-image: url("../assets/check.svg"),url("../assets/Ellipse1.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 15px,20px;
+
+color:transparent;
+}

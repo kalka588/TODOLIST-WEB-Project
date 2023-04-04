@@ -1,0 +1,50 @@
+.mainContainer {
+    margin-top: 0px;
+    background-color: #E5E5E5;
+    justify-content: center;
+}
+
+.formContainer {
+    align-content: center;
+}
+
+.signup {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.formContainer input {
+    flex-grow: 1;
+}
+
+
+input {
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+}
+
+.signup label {
+    display: block;
+
+}
+
+.signup {
+    gap: 8px;
+}
+
+.error {
+    color: #D63031;
+}
+
+.success {
+    color: #27AE60;
+}

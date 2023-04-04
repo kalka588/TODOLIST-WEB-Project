@@ -1,0 +1,72 @@
+.big_div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    Z-index: 2;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.buble {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 382px;
+    height: 224px;
+    border-style: none;
+    border-radius: 4px;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 32px;
+}
+
+.buble .textcontent1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.buble .textcontent1 p:first-child {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.buble .textcontent2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+}
+
+.annul_button_popup {
+    background-color: #C4C4C4;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 20px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    grid-template-columns: auto auto;
+    border-radius: 3px;
+    flex-grow: 1;
+    border-style: none;
+}
+
+.supr_list_button {
+    border-style: none;
+}

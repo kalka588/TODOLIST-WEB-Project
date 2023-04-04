@@ -1,0 +1,108 @@
+/*html,
+.mainContainer {
+    background-color: #E5E5E5;
+}
+*/
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    margin-top: 78px;
+    padding-left: 12px;
+    padding-right: 13px;
+    background-color: #FFFFFF;
+    height: 100%;
+    align-items: center;
+}
+
+/* Correspond à tous les éléments flexContainer */
+.mainContainer .flexContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+/* Correspond  à la première div, au form*/
+.mainContainer .flexContainer .flexContainer {
+    row-gap: 16px;
+}
+
+/* Correspond au div dans les forms */
+.mainContainer .flexContainer .flexContainer .flexContainer {
+    row-gap: 8px;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.emailActuel {
+    font-weight: 500;
+}
+
+[type="button"] {
+    background-color: #FF7675;
+    border-style: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+[type="email"],
+[type="password"] {
+    border-radius: 4px;
+    border: 1px solid #ADADAD;
+    padding-left: 16px;
+}
+
+form input {
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+label {
+    color: #222222;
+}
+
+body {
+    height: 100%;
+}
+
+.main {
+    background: #FFFFFF;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list_element input {
+    bottom: 20.83%;
+    font-size: 0.75rem;
+    background: #FF7675;
+    border-radius: 3px;
+    bottom: 0px;
+    height: 24px;
+    width: 24px;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.list_element p {
+    flex-grow: 1;
+}
+
+[type="checkbox"]:checked+.task p:first-child {
+    text-decoration: line-through;
+}
+
+.container3 li a {
+    text-decoration: none;
+    color: #000000;
+}

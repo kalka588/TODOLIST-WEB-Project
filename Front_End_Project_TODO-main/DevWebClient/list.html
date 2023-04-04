@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+    <link href="css/custom_checkboxes.css" rel="stylesheet">
+    <link href="css/responsiveSettings.css" rel="stylesheet">
+    <link href="css/responsiveList.css" rel="stylesheet">
+    <script src="js/genereHTML.js"></script>
+    <script type="module" src="js/resize.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/Add_Element.js"></script>
+    <script src="js/nouvelle_list.js"></script>
+    <script type="module" src="js/responsiveDisplayClass.js"></script>
+    <script type="module" src="js/reponsiveDisplayEditing.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="assets/menu.svg" alt="icon menu" onclick="displayMenu()">
+            <p>Projet tutoré</p>
+            <img src="assets/delete-white.svg" alt="icon delete all" onclick="supr_All()">
+        </div>
+        <nav class="menuDeskop">
+            <div class="MaxContainer">
+                <img class="close_icon" src="assets/close.svg" alt="icon close" onclick="displayMenu()">
+                <a href="index.html" class="container1"> <img src="assets/home.svg" alt="icon home">jesmo@drazik.com</a>
+                <div class="container2">
+                    <div class="list_title">
+                        <h4>Mes Listes </h4>
+                        <hr>
+                    </div>
+                    <ul class="my_list">
+                        <li class="list_element">
+                            <p>To do today </p><input type="button" value="2">
+                        </li>
+                        <li class="list_element">
+                            <p>Projet tutoré</p> <input type="button" value="5">
+                        </li>
+                        <li class="list_element">
+                            <p>Stage</p>
+                        </li>
+                        <li class="list_element"><img src="assets/red-cross.svg" alt="icon supprimer-element"
+                                onclick="newList()"> Nouvelle liste
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="container3">
+                        <li> <a href="settings.html"><img src="assets/settings.svg" alt="icon parametre">
+                                <p>Paramètres</p>
+                            </a>
+                        </li>
+                        <li onclick="deconnexion()"><img src="assets/logout.svg" alt="icon déconnexion">
+                            <p>Deconnection</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="boxOpacityRight"></div>
+        <div class="big_div">
+            <div class="buble">
+                <div class="textcontent1">
+                    <p> Supprimer list</p>
+                    <p>Après avoir été supprimée, une liste ne peut pas être récupérée. Êtes-vous certain(e) de vouloir
+                        supprimer la liste “” ?</p>
+                </div>
+                <div class="textcontent2">
+                    <button class="supr_list_button" onclick="supr_All()"> <img src="assets/white-delete.svg"
+                            alt="icon supprimer"> Supprimer
+                        la liste</button>
+                    <button class="annul_button_popup" onclick="Supr_List_Button()"> <img src="assets/arrow-back.svg"
+                            alt="icon buton-annuler">
+                        Annuler</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mainContainer">
+        <div class="parentediting">
+            <div class="editing">
+                <img class="close_icon" src="assets/close.svg" alt="icon close" onclick="displayEditing()">
+                <form class="edit_container">
+                    <div class="Etapes">
+                        <p>Titre </p>
+                        <div class="border">
+                            <div class="Etape-element">
+                                <input class="padding" placeholder="Créer un repository sur github">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Etapes">
+                        <p>Etapes </p>
+                        <div>
+                            <div class="border">
+                                <div class="Etape-element"><input type="checkbox"><input placeholder="Aller sur github">
+                                </div>
+                            </div>
+                            <img class="minus" src="assets/minus.svg" alt="icon supprimer-element">
+                        </div>
+                        <div>
+                            <div class="border">
+                                <div class="Etape-element"><input type="checkbox"><input
+                                        placeholder="Créer un repository sur github">
+                                </div>
+                            </div>
+                            <img class="minus" src="assets/minus.svg" alt="icon supprimer-element">
+                        </div>
+                        <div>
+                            <div class="border">
+                                <div class="Etape-element">
+                                    <input class="padding" placeholder="Nouvelle étape">
+                                </div>
+                            </div>
+                            <img class="plus" src="assets/plus.svg" alt="icon ajout-element">
+                        </div>
+                    </div>
+                    <div class="Etapes">
+                        <p>Echéance </p>
+                        <input type="date" class="grow">
+                    </div>
+                    <div class="Note_Space">
+                        <p>Note </p>
+                        <div class="parent">
+                            <div class="note"><textarea>Quelques détails à propos de cette tâche...</textarea> </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="edit_button">
+                            <input type="button" value=" Enregister" class="save_button">
+                            <input type="button" class="annul_button" value="Annuler" onclick="displayEditing()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="boxOpacity"></div>
+        </div>
+        <div>
+            <div class="item_holder">
+                <div class="gaped">
+                    <p> Projet tutoré </p> <button class="supr_list_button" onclick="Supr_List_Button()">
+                        <img src="assets/white-delete.svg" alt="icon supprimer-liste"> Supprimer la liste</button>
+                </div>
+                <div class="item">
+                    <input type="checkbox">
+                    <div class="task">
+                        <p onclick="displayEditing()" class="taskl1">Créer un repository sur github</p>
+                        <ul class="task_l2">
+                            <li>1 sur 2 </li>
+                            <li><img src="assets/dot.svg" alt="icon point"> </li>
+                            <li>Echeance:aujourd'hui </li>
+                            <li><img src="assets/dot.svg" alt="icon point"></li>
+                            <li> Note</li>
+                        </ul>
+                    </div>
+                    <img src="assets/delete.svg" alt="icon delete" onclick="deleteItem(this)">
+                </div>
+                <div class="item">
+                    <input type="checkbox">
+                    <div class="task">
+                        <p onclick="displayEditing()" class="taskl1">Créer un repository sur github</p>
+                        <ul class="task_l2">
+                            <li>1 sur 2 </li>
+                            <li><img src="assets/dot.svg" alt="icon point"> </li>
+                            <li>Echeance:aujourd'hui </li>
+                            <li><img src="assets/dot.svg" alt="icon point"></li>
+                            <li> Note</li>
+                        </ul>
+                    </div>
+                    <img src="assets/delete.svg" alt="icon delete" onclick="deleteItem(this)">
+                </div>
+                <div class="item">
+                    <input type="checkbox">
+                    <div class="task">
+                        <p onclick="displayEditing()" class="taskl1">Créer un repository sur github</p>
+                        <ul class="task_l2">
+                            <li>1 sur 2 </li>
+                            <li><img src="assets/dot.svg" alt="icon point"> </li>
+                            <li>Echeance:aujourd'hui </li>
+                            <li><img src="assets/dot.svg" alt="icon point"></li>
+                            <li> Note</li>
+                        </ul>
+                    </div>
+                    <img src="assets/delete.svg" alt="icon delete" onclick="deleteItem(this)">
+                </div>
+                <div class="item">
+                    <input type="checkbox">
+                    <div class="task">
+                        <p onclick="displayEditing()" class="taskl1">Créer un repository sur github</p>
+                        <ul class="task_l2">
+                            <li>1 sur 2 </li>
+                            <li><img src="assets/dot.svg" alt="icon point"> </li>
+                            <li>Echeance:aujourd'hui </li>
+                            <li><img src="assets/dot.svg" alt="icon point"></li>
+                            <li> Note</li>
+                        </ul>
+                    </div>
+                    <img src="assets/delete.svg" alt="icon delete" onclick="deleteItem(this)">
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/plus.svg" onclick="Add_new_element()" alt="icon ajout-element">
+                <input placeholder="Ajouter une tâche..." class="new_elemt_txt">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
